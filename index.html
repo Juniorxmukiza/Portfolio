@@ -555,16 +555,9 @@ h2.sec-title em {
   transition: all .25s;
 }
 .info-row:hover { background: rgba(255,255,255,0.04); border-color: rgba(232,201,122,0.2); transform: translateX(4px); }
-.info-key {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px; letter-spacing: 2.5px;
-  color: var(--text-ghost); text-transform: uppercase; min-width: 80px;
-}
-.info-val {
-  font-family: 'Syne', sans-serif;
-  font-size: 13px; color: var(--text); flex: 1; text-align: right;
-}
-.info-icon { color: var(--glow-gold); font-size: 14px; margin-left: 12px; }
+.info-key { font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:2.5px; color:var(--text-ghost); text-transform:uppercase; min-width:80px; flex-shrink:0; }
+.info-val { font-family:'Syne',sans-serif; font-size:13px; color:var(--text); flex:1; text-align:right; word-break:break-all; padding: 0 8px; }
+.info-icon { color:var(--glow-gold); font-size:14px; margin-left:8px; flex-shrink:0; }
 
 .form-card { padding: 48px; }
 .form-title {
@@ -677,6 +670,13 @@ footer {
   .proj-arrow { display: none; }
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 24px; }
   .about-stat-row { grid-template-columns: 1fr; }
+
+  /* ── contact mobile fixes ── */
+  .info-row { padding: 14px 16px; }
+  .info-key { font-size: 8px; letter-spacing: 1.5px; min-width: 60px; }
+  .info-val { font-size: 12px; }
+  .contact-left-card { padding: 28px 20px; }
+  .contact-headline { font-size: 36px; }
 }
 </style>
 </head>
@@ -962,7 +962,7 @@ footer {
     </div>
     <div class="gallery-mosaic reveal">
       <div class="gallery-tile">
-        <img src="photo11.JPG" style="width:100%; height:100%; object-fit:cover;">        <div class="tile-overlay"><span class="tile-label">Portrait</span></div>
+        <img src="photo11.jpg" style="width:100%; height:100%; object-fit:cover;">        <div class="tile-overlay"><span class="tile-label">Portrait</span></div>
       
       </div>
       <div class="gallery-tile">
